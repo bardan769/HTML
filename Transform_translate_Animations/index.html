@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 400px;
+        }
+        .box{
+            /* border: 2px solid; */
+            padding: 10px;
+            /* transform: translate(445px,79px) rotateX(2deg); */
+            /* transform: translate(0px,58px) rotate(45deg);
+            transform-origin: center;
+            transform: scale(1,1);
+            transform:skew(1deg,2deg);
+            transform: matrix(); */
+            /* transform: skew(180deg,0deg); */
+        }
+        img{
+            width: 192px;
+            height: 100px;
+        }
+        img:hover{
+            width: 40px;
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in; */
+            transition: width 3s ease-in-out 2s;
+            
+
+        }
+        .container:hover{
+            background-color: cyan;
+            transition-property: background-color;
+            /* transition-duration: 0.9s; */
+            transition-timing-function: ease-in;
+            transition-delay: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="../images/only_green(medium).jpg">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+    <script>
+        btn.addEventListener("click", ()=>{
+            myImage.style.width = "546px";
+        }
+        )
+    </script>
+</html>

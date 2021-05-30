@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Paytm Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="">
+      <h1 class="main-heading" c>Paytm</h1>
+      <hr>
+      <h2>Contact Information</h2>
+      <label for="Name">
+        <p>Name : <input type="text" name="name" id="Name" placeholder="Enter your name" required class="placeholder"/></p>
+      </label>
+      <fieldset>
+        <legend>*Gender</legend>
+        <p>
+          <label for="Male">Male <input type="radio" name="gender" id="Male" required />
+          </label>
+          <label for="Female">
+            Female <input type="radio" name="gender" id="Female" required />
+          </label>
+        </p>
+      </fieldset>
+      <label for="Address">
+        <p>
+          Address
+          <textarea name="Address" id="Address" cols="50" rows="7" placeholder="Enter your address" class="placeholder"></textarea>
+        </p>
+      </label>
+      <label for="email">
+        <p>Email: <input type="email" name="email" id="email" placeholder="someone@gmail.com" required class="placeholder"/></p>
+      </label>
+      <label for="PIN_number">
+        <p>
+          PIN Code:
+          <input type="number" name="Pin code" id="PIN_number" placeholder="0 0 0 0" required class="placeholder"/>
+        </p>
+      </label>
+      <h2>Payment Information</h2>
+      <label for="card_type">
+        <p>
+          Card Type :
+          <select name="card_type" id="card_type" required class="placeholder">
+            <option  value="">--select card type--</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="rupay">RuPay</option>
+            <option value="Maestro">Maestro</option>
+          </select>
+        </p>
+      </label>
+      <label for="CNumber">
+        <p>
+          Card Number:
+          <input type="number" name="Cnumber" id="CNumber" placeholder="0000-0000-0000-0000"required class="placeholder"/>
+        </p>
+      </label>
+      <label for="E-date">
+        <p>
+          Expiration Date:
+          <input type="date" name="E_Date" id="E-date" required class="placeholder"/>
+        </p>
+      </label>
+      <label for="CVV_password">
+        <p>
+          CVV:
+          <input type="password" name="CVV_password" id="CVV_password" placeholder="password" required class="placeholder"/>
+        </p>
+      </label>
+      <input type="submit" value="PayNow" class="placeholder"/>
+    </form>
+  </div>
+</body>
+
+</html>

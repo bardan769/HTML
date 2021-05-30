@@ -1,0 +1,31 @@
+/* table,th,tr,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    border-spacing: 10px;
+}
+th{
+    background-color: skyblue;
+}
+td{
+    background-color: whitesmoke;
+} */
+table,th,td,tr{
+    border: 2px solid rgb(13, 10, 71);
+    padding: 25px;
+    border-collapse: collapse;
+}
+thead{
+    font-size: bolder;
+    background-color: skyblue;
+    
+}
+tbody{
+    background-color: honeydew;
+}
+tfoot{
+    background: ivory;
+}
+.myname{
+    font-weight: bold;
+}
