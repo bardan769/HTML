@@ -1,0 +1,29 @@
+
+.fitems{
+    width: 5em;
+    height: 5em;
+    padding: 5px;
+    margin: 20px;
+    border: 2px solid;
+    color: blue;
+    background-color: cyan;
+}
+.fcontainer{
+    border: 2px solid;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+.fitems:nth-child(1){
+    order: 5;
+    /* flex-grow: 2; */
+    flex-shrink: 3;
+    align-self: center;
+    /* justify-self: center; IT does not work  */
+}
+.fitems:nth-child(4){
+    order: 4;
+    /* flex-grow: 4; */
+    flex-shrink: 1;
+}

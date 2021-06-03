@@ -1,0 +1,44 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+}
+
+.gcontainer{
+    background-color: cyan;
+    /* width: 70vw; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 143px 1fr 43px;
+
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    row-gap: 12px;
+    column-gap: 12px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+
+    place-self: center;
+}
+.gitems{
+    background-color: violet;
+    border: 2px solid;
+    width: 6em;
+    height: 6em;
+    padding: 5px;
+    color: blue;
+}
+.gitems:first-child{
+    grid-column: 1 / span 3;
+    width: 100vw;
+}
+.gitems:last-child{
+    grid-column: 1 / span 3;
+    width: 100vw;
+}
+.gitems:nth-child(3){
+    /* justify-self: start;
+    align-self: end; */
+    place-items: start;
+}

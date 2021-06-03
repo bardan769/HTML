@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress score</title>
+    <style>
+        .progress {
+
+            background-color: red;
+            height: 3px;
+            animation: pro 1s ease-in-out 1;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 125px;
+            background-color: black;
+        }
+
+        main {
+            height: 900px;
+            background-color: cyan;
+        }
+
+        @keyframes pro {
+            0% {
+                width: 0;
+            }
+
+            75% {
+                width: 50vw;
+            }
+
+            100% {
+                width: 100vw;
+                color: black;
+            }
+        }
+
+        img {
+            transform: translate(1000px,200px);
+            animation: rotate 0.1ms infinite;
+        }
+
+        @keyframes rotate{
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+        <img src="Ashoka_Chakra.svg" alt="" width="300px">
+    </main>
+
+</body>
+
+</html>
