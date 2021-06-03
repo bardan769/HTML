@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        
+        #similar{
+            border-radius: 2px;
+            background-color: rgba(0, 255, 255, 0.575);
+            padding: 5px;
+        }
+        .container{
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            grid-gap: 5px;
+        }
+        .item
+        {
+            height: 100vh;
+            /* width: auto; */
+        }
+        .container_col2{
+            display: grid;
+            /* grid-template-columns: 150px; */
+            grid-gap: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="similar">1</div>
+
+        <div class="container_col2">
+            <div id="similar">2</div>
+            <div id="similar">3</div>
+        </div>
+
+        <div class="container_col2">
+            <div id="similar">4</div>
+            <div id="similar">5</div>
+            <div id="similar">6</div>
+        </div>
+
+        <div class="container_col2">
+            <div id="similar">7</div>
+            <div id="similar">8</div>
+            <div id="similar">9</div>
+            <div id="similar">10</div>
+        </div>
+
+        <div class="container_col2">
+            <div id="similar">11</div>
+            <div id="similar">12</div>
+            <div id="similar">13</div>
+            <div id="similar">14</div>
+            <div id="similar">15</div>
+        </div>
+
+        <div class="container_col2">
+            <div id="similar">15</div>
+            <div id="similar">16</div>
+            <div id="similar">17</div>
+            <div id="similar">18</div>
+            <div id="similar">19</div>
+            <div id="similar">20</div>
+        </div>
+        
+        <div class="container_col2">
+            <div id="similar">21</div>
+            <div id="similar">22</div>
+            <div id="similar">23</div>
+            <div id="similar">24</div>
+            <div id="similar">25</div>
+            <div id="similar">26</div>
+            <div id="similar">27</div>
+            <div id="similar">28</div>
+        </div>
+        
+    </div>
+</body>
+</html>
